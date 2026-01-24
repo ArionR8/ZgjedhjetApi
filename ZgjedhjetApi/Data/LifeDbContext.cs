@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ZgjedhjetApi.Models.Entities;
 
 namespace ZgjedhjetApi.Data
 {
@@ -8,5 +9,6 @@ namespace ZgjedhjetApi.Data
         public LifeDbContext(DbContextOptions<LifeDbContext> options) : base(options)
         {
         }
+        public DbSet<Zgjedhjet> Zgjedhjet { get; set; }
     }
 }
